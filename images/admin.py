@@ -6,6 +6,6 @@ class ImageAdmin(admin.ModelAdmin):
     pass
 
 
-admin.site.register(Image,ImageAdmin)
+admin.site.register(Image)
 admin.site.register(Location)
 admin.site.register(Category)
