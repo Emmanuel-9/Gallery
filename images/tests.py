@@ -14,7 +14,7 @@ class LocationTestClass(TestCase):
     # Testing save method
     def test_save_method(self):
         self.germany.save_location()
-        locations = Location.objects.all()
+        locations = Location.object.all()
         self.assertTrue(len(locations) > 0)
 
 class CategoryTestClass(TestCase):
@@ -29,5 +29,5 @@ class CategoryTestClass(TestCase):
     # Testing save method
     def test_saving_method(self):
         self.saloon.save_category()
-        categories = Category.objects.all()        
+        categories = Category.object.all()        
         self.assertTrue(len(categories) > 0)
