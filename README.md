@@ -1,3 +1,21 @@
+## GALLERY
+
+## TECHNOLOGIES USED
+* Django
+* Python
+* HTML
+* Bootstrap
+
+## SET UP INSTRUCTIONS
+* Clone the url of the repository to your desired folder on your PC.
+* Open the folder in a text editor.
+* Open the terminal and create a virtual environment using python3 -m venv virtual
+* Activate the virtual environment using source virtual/bin/activate
+* Install all the flask packages in 'requirements.txt' using pip install command
+* Run python3 manage.py runserver on your terminal
+
+
+
 ## AUTHOR
 * Emmanuel Orega
 
