@@ -2,3 +2,7 @@
 
 {% include 'navabar.html' %}
 
+{% block content %}
+{{ block.super }}
+<h1> Welcome </h1>
+{% endblock %}
