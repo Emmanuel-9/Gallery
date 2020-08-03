@@ -13,13 +13,17 @@
 
   <div class="row">
 
-  {% if images %}
+  
     {% for image in images %}
       <div class="col-sm-6 col-md-3">
           <h1>{{image.name}}</h1>
       </div>
+      {% empty %}
+      <div class="row">
+        <h2 class="text-center">There No Image Items</h2>
+      </div>
     {% endfor %}
-  {% endif %}
+
   </div>
 </div>
 {% endblock %}
