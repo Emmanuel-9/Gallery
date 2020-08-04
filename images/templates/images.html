@@ -3,16 +3,21 @@
 
 <div class="container">
     <div class="row">
-        <img src="{{image.actual_image.url}}" class="img-responsive" alt="Image">
+        <img src="{{image.actual_image.url}}" class="img-thumbnail" alt="Image">
     </div>
       <div class="row">
           <h1 class="text-center">{{image.name}}</h1>
       </div>
         <div class="row">
-            <p>{{image.description}}</p>
-            <p>{{image.category}}</p>
-            <p>{{image.location}}</p>
+           <div class="card">
+             <div class="card-body" style="padding-left: 10px;padding-right: 10px; border-style:groove; padding-bottom: 10px;padding-top: 10px; color: burlywood; background-color: gray;">
+                <p><strong> Description:</strong> {{image.description}}</p>
+                <p><strong> Category: </strong>{{image.category}}</p>
+                <p><strong> Location: </strong>{{image.location}}</p>
+             </div> 
+           </div> 
         </div>
          
 </div>
+
 {% endblock %}
