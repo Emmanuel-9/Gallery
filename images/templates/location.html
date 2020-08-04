@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{{ block.super }}
+
+{% block content %}
+  <div class="container">
+     {% for location in locations %} 
+      <div class="row">
+          
+          <img src="{{image.actual_image.url}}" class="img-responsive" alt="Image">
+      </div>
+        <div class="row">
+         <h1 class="text-center">{{image.name}}</h1>
+       </div>
+        <div class="row">
+            <p><strong> Description:</strong> {{image.description}}</p>
+            <p><strong> Category: </strong>{{image.category}}</p>
+            <p><strong> Location: </strong>{{image.location}}</p>
+        </div>
+      {% endfor %}  
+  </div>
+
+{% endblock %}
