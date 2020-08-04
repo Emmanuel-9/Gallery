@@ -24,4 +24,11 @@ def image(request,image_id):
     except DoesNotExist:
         raise Http404
        
-    return render(request,"images.html", {"image":image})        
+    return render(request,"images.html", {"image":image})       
+
+def location(request):
+    return render(request, 'location.html')
+
+def category(request):
+    return render(request,'gallery.html')
+
